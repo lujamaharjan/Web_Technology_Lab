@@ -1,2 +1,61 @@
-<!-- 2.	Create a Web page, wherein when the user clicks on the link it should go to the bottom of the page.
+<!-- 2.	Create a Web page, wherein when the user clicks on the
+     link it should go to the bottom of the page.
  -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .main {
+        width: 80%;
+        margin: auto;
+    }
+
+    .head {
+        height: 100px;
+        background-color: green;
+    }
+
+    .body {
+        height: 700px;
+        background-color: lime;
+    }
+
+    .foot {
+        height: 200px;
+        background: darkslategray;
+    }
+</style>
+
+<body>
+    <div class="main">
+        <div class="head">
+            <center>
+                <a href="#here"><button>Go Down</button></a>
+            </center>
+        </div>
+        <div class="body">
+            <center>
+                <h1>Main Body Container</h1>
+            </center>
+        </div>
+        <div class="foot" id="here">
+            <p>I am a footer.</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
