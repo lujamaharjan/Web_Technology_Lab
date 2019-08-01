@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>showing gifs </title>
+</head>
+<style>
+    img {
+        border: 1px solid blue;
+    }
+</style>
+
+<body>
+    <div id="gif" style="width:100px; margin:auto;">
+        <button onclick="myFunction()">watch gif</button>
+    </div>
+    <hr />
+    <script>
+
+        function myFunction() {
+            var txt;
+            if (confirm("press a button!")) {
+                txt = '<img src="doremon.gif">';
+                txt += "<p>Doremon.</p>";
+            }
+            else {
+                txt = "You pressed cancel!";
+            }
+            document.querySelector("#gif").innerHTML = txt;
+        }
+    </script>
+
+
+</body>
+
+</html>

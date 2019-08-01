@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>question3</title>
+</head>
+
+<body>
+    <h1>Car Details</h1>
+    <div id="showcase">
+
+    </div>
+    <script>
+        var car = {
+            model: "y72k",
+            make: "dusty",
+            price: "$2k",
+            year: 2019
+        }
+
+        let message = document.getElementById("showcase");
+        let text = "<h2> Model: " + car.model + "</h2>"
+        text += "<h2> Make: " + car.make + "</h2>"
+        text += "<h2> Price: " + car.price + "</h2>"
+        text += "<h2> Year: " + car.year + "</h2>"
+        message.innerHTML = text;
+
+    </script>
+</body>
+
+</html>
